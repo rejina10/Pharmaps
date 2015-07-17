@@ -1,0 +1,143 @@
+@CHARSET "ISO-8859-1";
+
+.center-wrapper {
+	text-align: center;
+	background-color: white;
+	display: block;
+}
+
+.center-wrapper * {
+	margin: 0 auto;
+}
+
+.center-wrapper img {
+	max-width: 45%;
+	height: auto;
+}
+
+.header {
+	border: white;
+}
+
+.li-background-color {
+	background: white;
+}
+
+#pills_icon {
+	max-width: 25%;
+	float: right;
+	padding-right: 0.6em;
+	padding-top: 0.8em;
+	position: absolute;
+}
+
+#inputImage {
+	background: url("../images/calendar.png") no-repeat right;
+	background-size: 2em 2em;
+	width: 8.5em;
+}
+
+#timer {
+	background: url("../images/bullet_clock.png") no-repeat right;
+	background-size: 2em 2em;
+}
+
+.Verwijder {
+	width: 130px;
+}
+
+#check_days {
+	width: 100%;
+	margin-left: 0.2em;
+}
+
+#checkbox7 {
+	width: 2.5em;
+}
+
+#timer {
+	width: 5em;
+}
+
+#quantity {
+	width: 10.4em;
+}
+
+#scan {
+	padding-top: 0.1em;
+	max-width: 100%;
+	height: 375px;
+	background: #c3ffa5;
+}
+
+#scan img {
+	float: right;
+	max-width: 25%;
+}
+
+#scan h1 {
+	padding-left: 0.2em;
+	width: 5em;
+	
+}
+
+#scan p {
+	padding-left: 0.5em;
+}
+
+#cross {
+	padding-top: 0.1em;
+	max-width: 100%;
+	height: 375px;
+	background: #ff93d4;
+}
+
+#cross img {
+	float: right;
+	max-width: 25%;
+}
+
+#cross h1 {
+	padding-left: 0.2em;
+	width: 5em;
+}
+
+#cross p {
+	padding-left: 0.5em;
+}
+
+.page_background {
+	background: white;
+}
+
+.btn_right {
+	float: right;
+}
+
+.btn_login {
+	width: 130px;
+}
+
+.ui-select .ui-btn {
+	width: 11.2em;
+}
+
+.ui-select .ui-btn-corner-all {
+	border-radius: 0.6em;
+}
+
+#radio-choice {
+	font-size: 20px;
+}
+
+#listMedicine ul li a h3 {
+	margin-left: 2em;
+}
+
+div.ui-loader.ui-body-a {
+	display: none;
+}
+span { 
+    font-weight: bold; 
+    
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<!-- <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="mycss/style.css" />
+	<script src="jquery.mobile/jquery-1.7.2.min"></script>
+	<script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
+	<<script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
+	<title>Schema</title> -->
+</head>
+<body>
+	<div data-role="page" id="page_cross" class="page_background">
+		<div data-role="header" class="header">
+			<div class='center-wrapper'>
+				<img src="images/logo.png"> <img id="pills_icon"
+					src="images/pills_icon.png">
+			</div>
+		</div>
+		<div data-role="content">
+			<div id="btn_right">
+				<input type="button" id="Voeg schema toe" value="Voeg Toe" />
+			</div>
+			<div id="cross">
+				<img src="images/cross.png" >
+				<h3>Wrong Medicine</h3>
+				<p>
+					<b> &nbsp;Medicijn is geschikt voor gebruik in combinatie met
+						uw profiel en huidige medicijnen. </b>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

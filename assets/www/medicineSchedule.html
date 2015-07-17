@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<!--  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="mobiscroll/mobiscroll-1.6.min.css" />
+	<link rel="stylesheet" href="mycss/style.css" />
+	<script src="jquery.mobile/jquery-1.7.2.min.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
+	<script src="mobiscroll/mobiscroll-1.6.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="myscripts/schema.js"></script>
+	<script type="text/javascript" src="myscripts/writeSchedule.js"></script>
+	<script type="text/javascript" src="myscripts/mobiscroll.js"></script>
+	<script type="text/javascript" src="myscripts/backButton.js"></script>
+	<script type="text/javascript" src="myscripts/json2.js"></script>
+	<script type="text/javascript" src="myscripts/getUrlValue.js"></script>
+	<script type="text/javascript" src="myscripts/medicineSchedule.js"></script>
+	<script type="text/javascript" src="listMedicine.json"></script> -->
+</head>
+<body>
+	<div data-role="page" id="page_medicineSchedule" class="page_background" >
+		<div data-role="header" class="header">
+			<div class='center-wrapper'>
+				<img src="images/logo.png"> <img id="pills_icon" src="images/icon.png">
+			</div>
+		</div>
+		<div data-role="content">
+			<form id="frmSetSchema" >
+				<div>
+					<fieldset data-role="controlgroup" data-type="horizontal" class="check_days" >
+						<input name="Ma" id="checkbox1" type="checkbox" value="Ma" data-mini="true" /> 
+						<label for="checkbox1">Ma</label> 
+						<input name="Di" id="checkbox2" type="checkbox" value="Di" data-mini="true" /> 
+						<label for="checkbox2">Di</label> 
+						<input name="Wo" id="checkbox3" type="checkbox" value="Wo" data-mini="true" /> 
+						<label for="checkbox3">Wo</label> 
+						<input name="Do" id="checkbox4" type="checkbox" value="Do" data-mini="true" /> 
+						<label for="checkbox4">Do</label> 
+						<input name="Vr" id="checkbox5" type="checkbox" value="Vr" data-mini="true" /> 
+						<label for="checkbox5">Vr</label> 
+						<input name="Za" id="checkbox6" type="checkbox" value="Za" data-mini="true" />
+					    <label for="checkbox6">Za</label>
+					    <input name="Zo" id="checkbox7" type="checkbox" value="Zo" data-mini="true" /> 
+					    <label for="checkbox7" style="width: 2.5em">Zo</label>
+					</fieldset>
+				</div>
+				<table width=100%>
+					<tr>
+						<td><input type="hidden" id="listname" name="listname">
+						</td>
+					</tr>
+					<tr>
+     					<td><label><b>Tijd</b></label></td>
+						<td><input type="text" id="timer" name="timer"></td>
+					</tr>
+					<tr>
+						<td><label><b>Medicijn</b></label>
+					</td>
+					<td>
+					  <div>
+						 <select name="selectMedicine" data-inline="true" data-native-menu="false" data-inset="true" class="ui-select" id="selectMedicine">
+									<!-- <option value="Paracetamol">Paracetamol</option>
+									<option value="Prednison">Prednison</option>
+									<option value="Menthol">Menthol</option> -->
+						</select>
+						</div></td>
+					</tr>
+					<tr>
+						<td><label><b>Hoeveelheid</b></label></td>
+						<td><input type="number" id="quantity" name="quantity"></td>
+					</tr>
+				</table>
+				<div>
+					<span class="btn_right">
+						 <!-- <button id="submit" type="submit" name="submit" value="submit">Osplaan</button>  -->
+						<input id="saveSchedule" type="button" value="Osplaan">
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

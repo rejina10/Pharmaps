@@ -1,0 +1,51 @@
+<?xml version = "1.0" encoding="ISO-8859-15"?>
+<clients>
+	<client>
+		<name>Pharmaps</name>
+	</client>
+	<client>
+		<name>Medicijnonline.nl</name>
+	</client>
+	<client>
+		<name>Mijnmedicijn.nl</name>
+	</client>
+	<client>
+		<name>DA drogist</name>
+	</client>
+	<client>
+		<name>Etos</name>
+	</client>
+	<client>
+		<name>Kruidvat</name>
+	</client>
+	<client>
+		<name>De Tuinen</name>
+	</client>
+	<client>
+		<name>Yulius</name>
+	</client>
+
+
+
+
+
+	<client>
+		<name>Laurens</name>
+	</client>
+	<client>
+		<name>GGZFriesland</name>
+	</client>
+	<client>
+		<name>Mediq</name>
+	</client>
+	<client>
+		<name>Thuisapotheek</name>
+	</client>
+	<client>
+		<name>NControl</name>
+	</client>
+	<client>
+		<name>Kring</name>
+	</client>
+
+</clients>

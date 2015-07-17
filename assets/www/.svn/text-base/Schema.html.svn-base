@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<!-- <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.1.0.min.css" />
+ 	<link rel="stylesheet" href="mycss/style.css" /> 
+	<script src="jquery.mobile/jquery-1.7.2.min.js"></script>
+    <script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>  -->
+	
+	<!-- <script type="text/javascript" src="myscripts/schema.js"></script>
+	<script type="text/javascript" src="myscripts/backButton.js"></script> 
+	<script type="text/javascript" src="myscripts/json2.js"></script> 
+	<script type="text/javascript" src="myscripts/writeSchedule.js"></script> 
+	<script type="text/javascript" src="myscripts/parseSchema.js"></script>  
+	<script type="text/javascript" src="myscripts/medicineSchedule.js"></script> 
+	<script type="text/javascript" src="myscripts/getUrlValue.js"></script> 
+	<title>Schema</title> -->
+</head>
+<body>
+	<div data-role="page" id="page_medicineScheduleDisp" class="page_background" >
+		<div data-role="header"  class="header">
+			<div class='center-wrapper'>
+				<img src="images/logo.png">
+				<img id="pills_icon" src="images/icon.png">
+			</div>
+		</div>
+		<div data-role="content">
+		<div id="btn_right">
+		<a id="addNew"  data-role="button">Voeg schema toe</a>
+		</div>
+		
+		<ul id="scheduleDisp" data-inset="true" data-role="listview" >
+		</ul>
+		</div>
+	 
+	</div>
+</body>
+</html> 

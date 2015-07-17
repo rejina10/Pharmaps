@@ -1,0 +1,160 @@
+/**
+ * 
+ */
+ 
+var scanMedicineName;
+var scanFlag= false;
+document.addEventListener("deviceready", onDeviceReady, false);
+$("#page_list").live('pageinit', function(event) {
+    $("#scanmedicijn").click(function() {
+        //capturePhoto(); 
+        scanFlag = true;
+        scan();
+    });
+
+    $("#profile").click(function() {
+        $.mobile.changePage("profile.html", {
+            transition : "none"
+        });
+    });
+
+    $("#medicineList").click(function() {
+        // window.location.href = "medicineList.html";
+        $.mobile.changePage("medicineList.html", {
+            transition : "none"
+        });
+    });
+
+    $("#medicineSchedule").click(function() {
+        // window.location.href = "Schema.html";
+        $.mobile.changePage("Schema.html", {
+            transition : "none"
+        });
+    });
+    $("#pharmaps").click(function() {
+        window.location.href = "http://www.pharmaps.com";
+        /*$.mobile.changePage("http://www.pharmaps.com", {
+            transition : "none"
+        });*/
+    });
+});
+function scan() {
+    window.plugins.barcodeScanner.scan(function(result) {
+        /*alert("We got a barcode\n" +
+              "Result: " + result.text + "\n" +
+              "Format: " + result.format); */
+        tempresult = result.text;
+        //alert("result:"+tempresult);
+        if(result.cancelled===true){
+            alert("the scan was cancelled!!");            
+        }
+        else if (tempresult == '12345F') {
+
+            //alert("its paracetamol");
+            scanMedicineName = "Paracetamol";
+            $.mobile.changePage("correct.html");
+
+        }
+        else if(tempresult=='161718')
+            {
+             scanMedicineName = "Prednision";
+             $.mobile.changePage("correct.html");
+            }
+        else{
+            $.mobile.changePage("cross.html");
+        }
+    }, function(error) {
+        alert("Scanning failed: " + error);
+    });
+}
+
+/*function encode(type, data) {
+ window.plugins.barcodeScanner.encode(type, data, function(result) {
+ alert("encode success: " + result);
+ }, function(error) {
+ alert("encoding failed: " + error);
+ });
+ }*/
+function onDeviceReady() {
+    document.addEventListener('backbutton', onBackKeyDown, false);
+    /*alert("onDeviceReady");
+    pictureSource = navigator.camera.PictureSourceType;
+    destinationType = navigator.camera.DestinationType;*/
+}
+function onBackKeyDown() {
+    
+    if(scanFlag===true){
+        $.mobile.changePage("homeList.html", {
+            transition : "none"
+        });
+       scanFlag=false;
+    }
+    else if((scanFlag===false)&&($.mobile.activePage.is('#page_list'))){
+        navigator.notification.confirm('Do you want to log out?', // message
+                onConfirm, // callback to invoke with index of button pressed
+                'Log Out', // title
+                'Yes,No' // buttonLabels
+                );
+    }
+    else{
+        $.mobile.changePage("homeList.html", {
+            transition : "none"
+        }); 
+    }   
+}
+function onConfirm(buttonIndex) {
+    if (buttonIndex == 1) {
+        navigator.app.exitApp();
+    }
+}
+/*function onFail(error) {
+    console.log(error.code);
+}*/
+/*function capturePhoto() {
+ navigator.camera.getPicture(onPhotoURISuccess, onFail, {
+ sourceType : 1,
+ quality : 50,
+ destinationType : destinationType.FILE_URI
+ });
+ }
+ function onPhotoURISuccess(imageURI) {
+ createFileEntry(imageURI);
+ }
+ function createFileEntry(imageURI) {
+ window.resolveLocalFileSystemURI(imageURI, copyPhoto, onFail);
+ }
+ function copyPhoto(fileEntry) {
+ var rand = Math.floor(Math.random() * 101);
+ window.requestFileSystem(LocalFileSystem.PERSISTENT, 0,
+ function(fileSystem) {
+ fileSystem.root.getDirectory("photos_medicine", {
+ create : true,
+ exclusive : false
+ }, function(dir) {
+ fileEntry.moveTo(dir, "image" + rand + ".jpeg", function() {
+ if (rand % 2 == 0) {
+ // window.location.href = "correct.html";
+ $.mobile.changePage("correct.html", {
+ transition : "slide"
+ });
+ } else {
+ // window.location.href = "cross.html";
+ $.mobile.changePage("cross.html", {
+ transition : "slide"
+ });
+ }
+ }, onFail);
+ }, onFail);
+ }, onFail);
+ }*/
+
+/* * function onCopySuccess(entry) { if (rand % 2 == 0) { //window.location.href =
+ * "correct.html"; $.mobile.changePage("correct.html",{transition:"slide"}); }
+ * else { //window.location.href = "cross.html";
+ * $.mobile.changePage("cross.html",{transition:"slide"}); } }
+ */
+
+/*function onBackButtonPress() {
+    document.addEventListener('backbutton', onBackKeyDown, false);
+}*/
+

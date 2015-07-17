@@ -1,0 +1,20 @@
+var medicineInfo=
+{
+    medicines:{
+        medicine:
+		[
+            {
+                name:'Paracetamol',
+                description:'Het is niet aan te raden om het ingescande medicijn te\n\t\t\tgebruiken in combinatie met de huidige medicatie, bij twijfel neem\n\t\t\tcontact op met uw huisarts.\n\t\t'
+            },
+            {
+                name:'Prednison',
+                description:'De werkzame stof in Prednison is prednison.\n\n\t\t\tNatuurlijke bijnierschorshormonen remmen ontstekingen en\n\t\t\tovergevoeligheidsreacties en zijn nodig voor het vrijmaken en opslaan\n\t\t\tvan energie, mineralen en zouten.\n\n\t\t\tPrednison wordt toegepast bij zeer veel aandoeningen, waarbij\n\t\t\tontstekingsverschijnselen een rol spelen, zoals astma, COPD, reuma,\n\t\t\tmultiple sclerose (MS), lupus erythematodes (LE), bepaalde\n\t\t\tbloedziekten, de darmziekten colitis ulcerosa en de ziekte van Crohn\n\t\t\ten allergische reacties.\n\n\t\t\tVerder werkt het tegen sommige vormen van kanker en tegen de ernstige\n\t\t\tmisselijkheid die kan ontstaan bij chemotherapie.\n\t\t'
+            },
+            {
+                name:'Menthol',
+                description:'Menthol is een andere naam voor levomenthol.\n\n\t\t\tLevomenthol (menthol) heeft een verkoelend effect.\n\n\t\t\tHet wordt gebruikt bij jeuk, neusverkoudheid, bijholteontsteking en\n\t\t\thoest.\n\n\t\t'
+            }
+        ]
+    }
+}

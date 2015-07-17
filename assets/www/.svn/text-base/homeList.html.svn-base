@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="mycss/style.css" />
+ 	<script src="jquery.mobile/jquery-1.7.2.min.js"></script>
+    <script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova-2.1.0.js"></script>
+	<script type="text/javascript" src="myscripts/profile.js"></script>
+	<script type="text/javascript" charset="utf-8" src="myscripts/pharmaps.js"></script> 
+	<script type="text/javascript" charset="utf-8" src="myscripts/backButton.js"></script>  -->
+	
+	<!-- <script type="text/javascript" src="myscripts/medicineList.js"></script>
+	<script type="text/javascript" src="listMedicine.json"></script>
+	<script type="text/javascript" src="myscripts/backButton.js"></script> 
+	<script type="text/javascript" src="myscripts/schema.js"></script> -->
+</head>
+<body> 
+ <div data-role="page" id="page_list" class="page_background" >
+   	<div data-role="header"  class="header">
+			<div class='center-wrapper'>
+				<img id="logo" src="images/logo.png">
+				<img id="pills_icon" src="images/icon.png"> 
+			</div>	
+	</div>
+	<div data-role="content" id="listMedicine">
+		<ul data-role="listview" data-inset="true" >
+			    <li data-icon="false" class="li-background-color" >
+			          <a  id="profile" >
+			         	<img src="images/bullet_person.png" class="ui-li-icon" />
+						<h3>Profiel</h3> 
+				      </a>
+				</li>
+
+				<li data-icon="false" class="li-background-color" >
+				      <a  id="medicineList"  > 
+						<img src="images/bullet_pills.png" class="ui-li-icon" />
+						<h3>Huidige medicijnen</h3>
+					  </a>
+				</li>
+
+				<li data-icon="false" class="li-background-color" >
+				        <a id="medicineSchedule" >
+							<img src="images/bullet_clock.png"	class="ui-li-icon" />
+							<h3>Innameschema</h3> 
+						</a>
+				</li>
+
+				<li data-icon="false" class="li-background-color" >
+						<a id="scanmedicijn" >
+					        <img src="images/bullet_barcode.png" class="ui-li-icon" />
+					       	<h3>Scan medicijn</h3> 
+				  		</a>
+				</li>
+				<li data-icon="false" class="li-background-color">
+						<a id="pharmaps" >
+							<img src="images/list_icon.png" class="ui-li-icon" />
+							<h3>Pharmaps</h3> 
+						</a>
+				</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html> 
